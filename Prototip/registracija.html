@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+    <title>AgroMerge</title>
+    <link rel = "icon" href ="slike/logo.png" >
+</head>
+<body onload="inicijalizujPromenljive()">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <img src="./slike/logo.png" width="80px" height="80px" alt="">
+            <h1> &nbsp; &nbsp; &nbsp;  AgroMerge</h1>
+            
+        </div>
+      </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6 card"><br>
+                <div style="text-align: center;" > 
+                    <h1>Registracija</h1>
+                    <br>
+                    <h3>Izaberite tip korisnika</h3>
+                    <br>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onchange="prikaziProizvodjaca();">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Proizvodjač
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                        onchange="prikaziPotrosaca();">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Potrošač
+                        </label>
+                      </div>
+                </div>
+                <div id="proizvodjac">
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Naziv firme:</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Molimo unesite naziv">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Korisničko ime:</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite korisničko ime">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Lozinka:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Potvrda lozinke</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite E-mail">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Kontakt telefon</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite kontakt telefon">
+                          </div>
+                        <div class="d-flex justify-content-evenly">
+                        <button type="submit" class="btn btn-success" onclick="uspesno2()">Registruj se</button>
+                        </div>
+                      </form>
+                </div>
+                <div id="potrosac">
+                    <br>
+                    <div>
+                        <div style="text-align: center;" > 
+                            <h3>Izaberite tip potrosaca</h3>
+                            <br>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="prikaziFizickoLice();">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Fizičko lice
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onchange="prikaziPravnoLice();">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Pravno lice
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div id="fizickoLice">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Ime:</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Molimo unesite ime">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Prezime:</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite prezime">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Korisničko ime:</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite korisničko ime">
+                              </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Lozinka:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Potvrda lozinke:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite E-mail">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Kontakt telefon:</label>
+                                <input type="twxt" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite kontakt telefon">
+                              </div>
+                      
+                            <div class="d-flex justify-content-evenly">
+                              <form >
+                                <button type="submit" formaction="logovanje.html" class="btn btn-success" >Registruj se</button>
+                             </form>
+                            </div>
+                          </form>
+                    </div>
+                    <div id="pravnoLice">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Naziv firme:</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Molimo unesite naziv firme">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">PIB:</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite PIB">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Korisničko ime:</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite korisničko ime">
+                              </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Lozinka:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Potvrda lozinke:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite lozinku">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite E-mail">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Kontakt telefon:</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Molimo unesite kontakt telefon">
+                              </div>
+                            <div class="d-flex justify-content-evenly">
+                            <button type="submit" class="btn btn-success" onclick="uspesno2()">Registruj se</button>
+                            </div>
+                          </form>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-sm-3"></div>
+          </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#proizvodjac{
+    display: none;
+}
+#potrosac{
+    display: none;
+}
+#fizickoLice{
+    display: none;
+}
+#pravnoLice{
+    display: none;
+}
+#tab{
+    border: solid;
+    width: 100%;
+    
+}
+#col{
+    border: solid;
+   height: 10px;
+}
+#proizvodjac{
+    display: none;
+}
+#potrosac{
+    display: none;
+}
+#fizickoLice{
+    display: none;
+}
+#pravnoLice{
+    display: none;
+}
+.ponuda a{
+    text-decoration: none;
+    color: black;
+}
+.ponuda{
+    text-align: center;
+}
+
+#izmeni{
+    display: none;
+}
+#kartica{
+    display: none;
+}
