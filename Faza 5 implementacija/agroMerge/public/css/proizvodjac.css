@@ -1,0 +1,109 @@
+body
+{
+    background: url('../slike/poljana.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+#prikazProizvoda
+{
+    background: url('../slike/njiva3.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#potrosac
+{
+    background: url('../slike/poljana.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#admin{
+    background: url('../slike/suncokret.webp');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+#moderator{
+    background: url('../slike/njiva.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#forma{
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+   
+ }
+
+ #tekst{
+    color: #ffffff;
+} 
+
+
+img:hover{
+    opacity: 0.7;
+}
+
+#forma2{
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+ }
+
+ .form-label{
+    color: #ffffff;
+}
+
+#dugmePrijava{
+margin-top: 30px;
+  height: 40px;
+  border: none;
+  background-color: yellowgreen;
+  border-radius: 20px;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 250px;
+  margin-bottom: 30px;;
+
+}
+
+#dugmePrijava1{
+    margin-top: 30px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  border-radius: 20px;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 250px;
+  margin-bottom: 30px;;
+ text-align: center;
+ text-decoration: none;
+
+}
+ #dugmePrijava2{
+    margin-top: 30px;
+  height: 40px;
+  border: none;
+  background-color: rgb(34, 32, 32);
+  border-radius: 20px;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 250px;
+  margin-bottom: 30px;;
+ text-align: center;
+ text-decoration: none;
+
+}
+
+h5{
+    color: #ffffff;
+}

@@ -1,0 +1,108 @@
+#proizvodjac{
+    display: none;
+}
+#potrosac{
+    display: none;
+}
+#fizickoLice{
+    display: none;
+}
+#pravnoLice{
+    display: none;
+}
+#tab{
+    border: solid;
+    width: 100%;
+    
+}
+#col{
+    border: solid;
+   height: 10px;
+}
+#proizvodjac{
+    display: none;
+}
+#potrosac{
+    display: none;
+}
+#fizickoLice{
+    display: none;
+}
+#pravnoLice{
+    display: none;
+}
+.ponuda a{
+    text-decoration: none;
+    color: black;
+}
+.ponuda{
+    text-align: center;
+}
+
+#izmeni{
+    display: none;
+}
+#kartica{
+    display: none;
+}
+
+#logovanje
+{
+    background: url('../slike/njiva.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#registracija
+{
+    background: url('../slike/njiva2.jpg');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#promenaLozinke
+{
+    background: url('../slike/psenica2.webp');
+    background-size: cover;
+   font-family: Tahoma, sans-serif;
+
+}
+
+#forma{
+   box-sizing: border-box;
+   background: rgba(0,0,0,0.5);
+}
+
+#prijava{
+    color: #ffffff;
+}
+
+.form-label{
+    color: #ffffff;
+}
+
+.form-label1{
+    color:lightgray;
+    
+}
+
+a:hover {
+    color:yellowgreen;
+    font-weight: bold;
+  }
+
+  #dugmePrijava{
+      margin-top: 30px;
+    height: 40px;
+    border: none;
+    background-color: tomato;
+    border-radius: 20px;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    width: 400px;
+    margin-bottom: 30px;;
+
+  }
